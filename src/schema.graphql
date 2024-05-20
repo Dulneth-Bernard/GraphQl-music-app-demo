@@ -2,6 +2,8 @@
 "objects are Pascal case, deils are camal case"
 
 
+#e Query type's fields define which data clients can query from our schema.
+# Query type are entry points into our schema. These are the top-level fields that a GraphQL consumer can query for.
 type Query {
   "Playlists hand-picked to be featured to all users."
   featuredPlaylists: [Playlist!]! #array can be empty but not null
@@ -9,7 +11,7 @@ type Query {
 }
 
 "A curated collection of tracks designed for a specific activity or mood."
-
+#object types define fields we can query for data.
 type Playlist {
   "The ID for the playlist."
   id: ID!
