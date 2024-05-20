@@ -2,11 +2,12 @@
 "objects are Pascal case, deils are camal case"
 
 
-# type Query{
+type Query {
+  "Playlists hand-picked to be featured to all users."
+  featuredPlaylists: [Playlist!]! #array can be empty but not null
+    #!) applied to the Playlist type inside array . This bit of syntax specifies that the list returned should either contain objects that adhere to the Playlist GraphQL type structure, or it should be empty. In other words, an array like [1,2,3] or [null, null] is not allowed!
+}
 
-# }
-
-# test 1
 "A curated collection of tracks designed for a specific activity or mood."
 
 type Playlist {
