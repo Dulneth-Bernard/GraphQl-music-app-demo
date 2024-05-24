@@ -12,3 +12,5 @@ export class SpotifyAPI extends RESTDataSource {
 }
 
 //Because it's a very common task to fetch data from REST when building a GraphQL API, Apollo Server provides a dedicated DataSource class for just that: the RESTDataSource.
+
+//Need to go through funcitonin grapghql
